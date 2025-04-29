@@ -1,115 +1,116 @@
 @font-face {
-  font-family: "SF Pro Display";
-  src: url("fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
-  font-weight: normal;
-}
-
-body {
-    background: linear-gradient(315deg, #04030B 5%, #EA8613 50%, #04030B 95%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: "SF Pro Display", sans-serif;
+    font-family: "SF Pro Display";
+    src: url("fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
+    font-weight: normal;
   }
   
-  .calculator {
-    background-color: #1c1c1c;
-    border-radius: 30px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url("fonts/SF-Pro-Display-Ultralight.otf") format("opentype");
+    font-weight: normal;
   }
   
-  .display {
-    background: black;
-    color: white;
-    font-size: 48px;
-    text-align: right;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    overflow-x: auto;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-  
-  button {
-    font-family: "SF Pro Display", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    padding: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-  
-  button:hover {
-    background-color: #444;
-  }
-  
-  button.orange {
-    background-color: #ff9500;
-    color: white;
-  }
-  
-  button.orange:hover {
-    background-color: #e08500;
-  }
-  
-  button.gray {
-    background-color: #a5a5a5;
-    color: black;
-  }
-  
-  button.gray:hover {
-    background-color: #999;
-  }
-  
-  button.wide {
-    grid-column: span 2;
-    border-radius: 50px;
-  }
-  
-  button:active {
-    transform: scale(0.95);
-    opacity: 0.9;
-  }
-  
-
-/* Tablet Layout*/
-@media screen and (max-width: 768px) {
   body {
-    padding: 15px;
+      background: linear-gradient(315deg, #04030B 5%, #1333ea 50%, #04030B 95%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: "SF Pro Display", sans-serif;
+    }
+    
+    .calculator {
+      background-color: #1c1c1c;
+      border-radius: 30px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .display {
+      background: black;
+      color: white;
+      font-size: 48px;
+      text-align: right;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    
+    button {
+      font-family: "SF Pro Display", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      padding: 20px;
+      border: none;
+      border-radius: 50%;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    
+    button:hover {
+      background-color: #444;
+    }
+    
+    button.orange {
+      background-color: #1333ea;
+      color: white;
+    }
+    
+    button.orange:hover {
+      background-color: #1333ea;
+    }
+    
+    button.gray {
+      background-color: #a5a5a5;
+      color: black;
+    }
+    
+    button.gray:hover {
+      background-color: #999;
+    }
+    
+    button.wide {
+      grid-column: span 2;
+      border-radius: 50px;
+    }
+    
+    button:active {
+        transform: scale(0.95);
+        scale: 0.9;
+    }
+    
+  
+  /* Tablet Layout*/
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 15px;
+    }
+    .container {
+      flex-direction: column;
+    }
   }
-  .container {
-    flex-direction: column;
+  
+  /* Phone Layout */
+  @media screen and (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+    .container {
+      padding: 5px;
+    }
+    .text {
+      font-size: 14px;
+    }
   }
-}
-
-/* Phone Layout */
-@media screen and (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-  .container {
-    padding: 5px;
-  }
-  .text {
-    font-size: 14px;
-  }
-}
+  
